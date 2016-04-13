@@ -1,0 +1,43 @@
+{
+  "name": "ql-schema-cli",
+  "version": "0.0.0",
+  "description": "CLI to generate a GraphQL schema for Relay.",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romellogood/ql-schema-cli.git"
+  },
+  "keywords": [
+    "graphql",
+    "relay",
+    "schema"
+  ],
+  "author": "Romello Goodman <> (http://romellogoodman.com)",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "qlschema": "dist/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/romellogood/ql-schema-cli/issues"
+  },
+  "homepage": "https://github.com/romellogood/ql-schema-cli#readme",
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-core": "^6.7.6",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.7.5",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.6.1",
+    "webpack": "^1.12.15"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "graphql": "^0.5.0"
+  }
+}
